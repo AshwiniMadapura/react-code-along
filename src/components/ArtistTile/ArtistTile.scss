@@ -1,0 +1,42 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+
+.bgcolor{
+    background-color: rgb(49, 46, 46);
+    height: 700px;
+    opacity: 0.5;
+}
+.artistTile{
+    height:700px;
+
+&__img{
+    height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+&__button{
+    background-color:$color-secondary;
+    min-width: 80px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    
+    
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  
+}
+&__name{
+    font-size: 40px;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+}

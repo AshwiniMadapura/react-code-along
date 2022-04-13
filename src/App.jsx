@@ -5,12 +5,18 @@ import moon from "./assets/images/moon.png";
 import Nav from "./components/Nav/Nav";
 import ButtonLetsGo from "./components/ButtonLetsGo/ButtonLetsGo";
 import ButtonExplore from "./components/ButtonExplore/ButtonExplore";
+import Button from "./components/Button/Button";
+
+import artist from "./data/artist";
+import ArtistTile from "./components/ArtistTile/ArtistTile";
 
 const App = () => {
   const user = {
     firstName: "John",
     lastName: "Doe",
   };
+  
+  console.log(artist.strArtist);
 
   const currentHour = new Date().getHours();
   let greetingImg = sunrise;
@@ -36,9 +42,15 @@ const App = () => {
         </h1>
       </header>
       <section className="button-section">
-        <ButtonLetsGo />
-        <ButtonExplore />
+        {/* <ButtonLetsGo />
+        <ButtonExplore /> */}
+        <Button buttonText={"This is a prop"} isSecondary={true} />
+        <Button buttonText={"This is also a prop"} isSecondary={false}/>
+        
+        
       </section>
+      
+      <ArtistTile/>
     </div>
   );
 };
